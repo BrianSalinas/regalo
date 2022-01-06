@@ -1,0 +1,128 @@
+body {
+    font-family: 'PT Sans Caption', "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    font-size: 3vh;
+}
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo {
+    text-decoration: none;
+    color: white;
+    font-size: 5vh;
+    font-weight: bold;
+}
+#menu-icon {
+    font-family: Geneva, sans-serif;
+    font-size: 6vh;
+}
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 1em;
+    box-sizing: border-box;
+    color: white;
+    background: url(https://wallpaperaccess.com/full/4102287.jpg) center center no-repeat;
+    background-size: cover;
+}
+.hero-title {
+    max-width: 16em;
+    margin: 0;
+    font-size: 12vh;
+    font-weight: bold;
+    line-height: 0.9;
+}
+@media only screen and (min-width: 32em) {
+    .hero-title {
+        font-size: 16vh;
+   }
+}
+.hero-footer {
+    display: flex;
+    margin-bottom: 1em;
+}
+.button {
+    padding: 0.5em 0.67em;
+    color: white;
+    text-decoration: none;
+    border: 0.1em solid white;
+}
+.button-primary {
+    color: black;
+    background-color: white;
+}
+article {
+    max-width: 36em;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+/*=========================================*/
+.heart{
+    width: 70px;
+    height: 70px;
+    background: #f90b0b;
+    position: relative;
+    box-shadow: 0 0 20px #ff1515,
+                0 0 60px #ff1515;
+    transform: rotate(-45deg);
+    animation: heart 1s linear infinite 0.2s alternate;
+    left: 47%;
+}
+@keyframes heart {
+    0%{
+        transform: rotate(-45deg) scale(1);
+    }
+    90%{
+        transform: rotate(-45deg) scale(1.6);
+    }
+    100%{
+        transform: rotate(-45deg) scale(1.4);
+    }
+}
+.heart::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #f90b0b;
+    border-radius: 50%;
+    left: 0;
+    top: -50%;
+}
+.heart::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #f90b0b;
+    border-radius: 50%;
+    top: 0;
+    right: -50%;
+}
+
+.video-responsive {
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	position: relative;
+	}
+.video-responsive iframe, .video-responsive object, .video-responsive embed {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	}
+
+    .fondo{
+        background-color: #e5e5f7;
+        background-image:  linear-gradient(135deg, #ff9e9e 25%, transparent 25%), linear-gradient(225deg, #ff9e9e 25%, transparent 25%), linear-gradient(45deg, #ff9e9e 25%, transparent 25%), linear-gradient(315deg, #ff9e9e 25%, #e5e5f7 25%);
+        background-position:  17px 0, 17px 0, 0 0, 0 0;
+        background-size: 34px 34px;
+        background-repeat: repeat;
+    }

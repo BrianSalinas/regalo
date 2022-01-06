@@ -1,0 +1,19 @@
+<div class="general">
+    <section class="galeria">
+        <div class="container-fluid gal-2">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center titulo">
+                    <h3 class="display-3">Nuestra Galeria</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="row row-cols-1 row-cols-md-5 g-4 justify-content-center">
+        <div class="col align-self-center" *ngFor='let x of counter(demoLen) ;let i= index'>
+            <div class="card">
+                <img src="../../assets/{{i}}.jpg" class="card-img-top" alt="..." loading="lazy">
+            </div>
+        </div>
+    </div>
+    
+</div>
